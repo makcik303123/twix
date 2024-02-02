@@ -26,7 +26,7 @@ for (let anchor of anchors) {
 		if (isDesktop) {
 			block = "center";
 		} else {
-			block = blockID === "prizes" ? "center" : "start";
+			block = "start";
 		}
 
 		document.getElementById(blockID).scrollIntoView({
