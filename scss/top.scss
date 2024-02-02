@@ -1,0 +1,26 @@
+.top {
+	// display: flex;
+	// flex-direction: column;
+	// padding-top: 200px;
+	justify-content: center;
+
+	.top-header {
+		width: 100%;
+		display: flex;
+		justify-content: center;
+	}
+
+	.top-main {
+		width: 100%;
+		position: relative;
+		display: flex;
+		justify-content: center;
+
+		.main-twix {
+			position: absolute;
+			width: 50%;
+			display: flex;
+			justify-content: center;
+		}
+	}
+}

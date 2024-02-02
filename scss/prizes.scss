@@ -1,0 +1,82 @@
+.prizes {
+	position: relative;
+	height: auto;
+	.prizes-bg {
+		width: 100%;
+
+		img {
+			width: 100%;
+		}
+		&.mobile {
+			display: none;
+
+			@media (max-width: 1024px) {
+				display: block;
+			}
+		}
+
+		&.desktop {
+			display: block;
+
+			@media (max-width: 1024px) {
+				display: none;
+			}
+		}
+	}
+
+	.prizes-container {
+		height: 100%;
+		width: 100%;
+		position: absolute;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		padding: 300px 20px;
+
+		.prizes-title {
+			margin-bottom: 26px;
+
+			@media (max-width: 1600px) {
+				margin-top: 80px;
+			}
+
+			@media (max-width: 1280px) {
+				margin-top: 60px;
+			}
+
+			@media (max-width: 1024px) {
+				margin-bottom: 126px;
+				margin-top: initial;
+			}
+
+			@media (max-width: 768px) {
+				margin-bottom: 76px;
+			}
+
+			@media (max-width: 476px) {
+				margin-bottom: 40px;
+				// width: 80%;
+				// display: flex;
+				// justify-content: center;
+			}
+		}
+
+		.prizes-main {
+			display: flex;
+			align-items: center;
+			// width: 100%;
+
+			.prize {
+				max-width: 80%;
+				height: 100%;
+				display: flex;
+				align-items: flex-end;
+			}
+
+			@media (max-width: 1024px) {
+				flex-direction: column;
+			}
+		}
+	}
+}

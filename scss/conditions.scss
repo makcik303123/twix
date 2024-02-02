@@ -1,0 +1,46 @@
+.conditions {
+	background-color: var(--brand-purple);
+	position: relative;
+
+	.conditions-container {
+		padding-top: 40px;
+		padding-bottom: 64px;
+
+		.conditions-title {
+			width: 100%;
+			display: flex;
+			justify-content: center;
+			margin-bottom: 10px;
+
+			@media (max-width: 1024px) {
+				margin-bottom: 40px;
+
+				img {
+					max-width: 85%;
+				}
+			}
+		}
+
+		.conditions-main {
+			width: 100%;
+			display: flex;
+			justify-content: center;
+
+			.desc {
+				display: block;
+
+				@media (max-width: 1024px) {
+					display: none;
+				}
+			}
+
+			.mobile {
+				display: none;
+
+				@media (max-width: 1024px) {
+					display: block;
+				}
+			}
+		}
+	}
+}
