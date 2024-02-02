@@ -1,10 +1,8 @@
 import "https://cdn.jsdelivr.net/npm/simplebar@latest/dist/simplebar.min.js";
 
-const app = document.querySelector(".app");
 const header = document.querySelector(".header-wrapper");
+const headerBottom = document.querySelector(".header-bottom");
 
-console.log(app);
-console.log(header);
 let prevState = window.scrollY;
 
 window.addEventListener("scroll", () => {
@@ -13,10 +11,10 @@ window.addEventListener("scroll", () => {
 	const scrollDown = prevState < scrollTop;
 	console.log(scrollTop, "scroll scrollTop");
 
-	if (scrollTop >= 150 && scrollDown) {
-		header.classList.add("hidden");
+	if (scrollTop >= 150) {
+		headerBottom.classList.add("hidden");
 	} else {
-		header.classList.remove("hidden");
+		headerBottom.classList.remove("hidden");
 	}
 
 	prevState = scrollTop;

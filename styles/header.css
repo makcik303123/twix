@@ -238,6 +238,8 @@ body.lock {
 
 .background {
   background: var(--white);
+  position: relative;
+  z-index: 1;
 }
 
 .header-bottom {
@@ -246,7 +248,11 @@ body.lock {
   width: 100%;
   overflow: hidden;
   display: flex;
+  transition: transform 0.3s ease-in-out;
 }
 .header-bottom img {
   width: 100%;
+}
+.header-bottom.hidden {
+  transform: translateY(-100%);
 }/*# sourceMappingURL=header.css.map */

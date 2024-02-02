@@ -249,6 +249,8 @@ body {
 
 .background {
 	background: var(--white);
+	position: relative;
+	z-index: 1;
 }
 
 .header-bottom {
@@ -257,8 +259,12 @@ body {
 	width: 100%;
 	overflow: hidden;
 	display: flex;
+	transition: transform 0.3s ease-in-out;
 
 	img {
 		width: 100%;
+	}
+	&.hidden {
+		transform: translateY(-100%);
 	}
 }
