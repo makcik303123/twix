@@ -11,7 +11,7 @@ window.addEventListener("scroll", () => {
 	const scrollDown = prevState < scrollTop;
 	console.log(scrollTop, "scroll scrollTop");
 
-	if (scrollTop >= 150) {
+	if (scrollTop >= 100) {
 		headerBottom.classList.add("hidden");
 	} else {
 		headerBottom.classList.remove("hidden");
